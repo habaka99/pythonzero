@@ -1,0 +1,50 @@
+import numpy as np
+# print(np.__version__)
+# a=np.array(10)
+# print(a.ndim)
+# b=np.array([10,20,30])
+# print(b.ndim)
+# c=np.array([[10,20],[1,2]])
+# print(c.ndim)
+# print(c[1][0])
+# print("#"*20)
+# my_custom_arry=np.array([[1,2,3]],ndmin=3)
+# print(my_custom_arry)
+# my_list=[1,2,3,4,5]
+# my_array=np.array([1,2,3,4,5])
+# print(my_list[0])
+# print(my_list[1])
+# print(my_array[0])
+# print(my_array[1])
+# print("#"*20)
+# print(id(my_list[0]))
+# print(id(my_list[1]))
+# print(id(my_array[0]))
+# print(id(my_array[1]))
+# print("#"*20)
+# my_list_data_one=[1,"a",2,3,True,10.5]
+# my_list_data_one=np.array([True])
+# print(type(my_list_data_one[0]))   
+# import time 
+# elemnts=150000000
+# my_list1=range(elemnts)
+# my_list1=range(elemnts)
+# my_array1=np.arange(elemnts)
+# my_array2=np.arange(elemnts)
+# list_start=time.time()
+# result_list=[(i+s) for i,s in zip(my_list1,my_list1)]
+# print(f"list time {time.time()-list_start}")
+# array_start=time.time()
+
+# result_array=my_array1 + my_array2
+# print(f"array time {time.time()-array_start}")
+import sys
+my_Array=np.arange(100)
+print(my_Array)
+print(my_Array.itemsize)
+print(my_Array.size)
+print(f"size of my_array bybites={my_Array.itemsize*my_Array.size}")
+my_list=range(100)
+print(sys.getsizeof(1))
+print(len(my_list))
+print(f"size of my_list bybites={sys.getsizeof(1)*len(my_list)}")

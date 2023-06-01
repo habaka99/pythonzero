@@ -1,0 +1,38 @@
+import numpy as np 
+# a=np.array(["A","B","C","D"])
+# print(a.ndim)
+# print(a[0])
+# print(a[0:3])
+# print("#"*50)
+# b=np.array([["A","B","X"],["C","D","I"],["E","F","Z"],["G","H","M"]])
+# print(b.ndim)
+# print((b[0]))
+# print([b[0:3,0:2]])
+# print("#"*50)
+
+####################data_type
+my_array1=np.array([1,2,3])
+my_array2=np.array([1.5,2.05,3.15])
+my_array3=np.array(["osama","b","ahmed"])
+print(my_array1.dtype)
+print(my_array2.dtype)
+print(my_array3.dtype)
+#craete arry with specific data type
+my_array4=np.array([1,2,3],dtype=float)
+my_array5=np.array([1.5,2.05,3.15],dtype=int)
+# my_array6=np.array(["osama","b","ahmed"],dtype="f")
+print(my_array4.dtype)
+print(my_array5.dtype)
+# print(my_array3.dtype)
+#change type with existing array
+my_array6=np.array([0,1,2,3,4,0])
+print(my_array6.dtype)
+print(my_array6)
+my_array6=my_array6.astype(float)
+print(my_array6.dtype)
+print(my_array6)
+#test capacity
+my_array8=np.array([100,200,300,400],dtype=float)
+print(my_array8[0].itemsize)
+my_array8=my_array8.astype("f")
+print(my_array8[0].itemsize)
